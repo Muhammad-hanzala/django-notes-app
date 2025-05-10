@@ -3,7 +3,7 @@
 </h2>
 ---
 <p align="center">
-  <img src="./assets/cicd-workflow.png" alt="CI/CD Workflow" width="95%" />
+  <img src="./assets/cicd-workflow2.png" alt="CI/CD Workflow" width="95%" />
 </p>
 
 ---

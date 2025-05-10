@@ -1,30 +1,57 @@
-# Simple Notes App
-This is a simple notes app built with React and Django..
+<h2 align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&duration=4000&pause=1000&color=36BCF7&vCenter=true&width=900&lines=🚀+End-to-End+CI/CD+Pipeline+for+Notes+App+using+Jenkins,+GitHub+%26+Shared+Libraries" alt="Typing SVG">
+</h2>
+---
+<p align="center">
+  <img src="./assets/cicd-workflow.png" alt="CI/CD Workflow" width="95%" />
+</p>
 
-## Requirements
-1. Python 3.9
-2. Node.js
-3. React
+---
 
-## Installation
-1. Clone the repository
-```
-git clone https://github.com/LondheShubham153/django-notes-app.git
-```
+## 🔧 Project Overview
 
-2. Build the app
-```
-docker build -t notes-app .
-```
+Built a fully automated **CI/CD pipeline** for deploying a containerized **Notes App** using Jenkins on **AWS EC2** — with pipelines managed via **GitHub**, triggered through **webhooks**, and modularized with shared **Groovy libraries**. All jobs run on a dedicated **Jenkins agent** node for enhanced security and performance.
 
-3. Run the app
-```
-docker run -d -p 8000:8000 notes-app:latest
-```
+---
 
-## Nginx
+## 🎯 Key Highlights
 
-Install Nginx reverse proxy to make this application available
+✅ 📁 **Pipeline as Code (Jenkinsfile in GitHub)**  
+- The entire pipeline logic is stored in GitHub.  
+- Jenkins uses *Pipeline Script from SCM* to dynamically fetch and run the Jenkinsfile.
 
-`sudo apt-get update`
-`sudo apt install nginx`
+✅ 🔁 **Auto Trigger via GitHub Webhook**  
+- Configured a webhook to trigger Jenkins builds on every push to the repo.  
+- Enables real-time CI/CD on every code change.
+
+✅ 🔧 **Jenkins Agent Node**  
+- Set up a dedicated EC2 worker node.  
+- All builds and deployments are executed on the agent for isolation and scalability.
+
+✅ 📦 **Deployment of Notes App (Dockerized)**  
+- The pipeline builds the Notes App into a Docker image.  
+- Authenticated Docker Hub push via Jenkins credentials.  
+- Ready-to-run containers on any environment.
+
+✅ 🧱 **Modular Pipeline with Shared Libraries**  
+- Reused custom Groovy scripts (from another GitHub repo’s `vars/` folder).  
+- Integrated via Global Shared Libraries using `@Library`.  
+- Achieved clean, DRY, and reusable pipeline stages (clone, build, push, etc.).
+
+---
+
+## 🛠️ Stack
+
+**Jenkins** • **GitHub** • **Docker** • **DockerHub** • **Groovy** • **Shell** • **AWS EC2**
+
+---
+
+## 📌 Outcome
+
+A **secure, scalable**, and **production-ready** CI/CD pipeline that builds and deploys a Dockerized Notes App using **best practices** in Jenkins automation.
+
+---
+
+## 🧠 Skills Showcased
+
+`GitHub` • `CI/CD Pipelines` • `Amazon EC2` • `Jenkins` • `Groovy` • `Automation` • `Docker` • `DockerHub` • `Docker-Compose`
